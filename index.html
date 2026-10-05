@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Information</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            padding: 24px;
+            border-top: 5px solid #00539b; /* สีน้ำเงิน BlueScope */
+        }
+
+        .product-title {
+            font-size: 20px;
+            color: #2d3748;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #edf2f7;
+            padding-bottom: 12px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* ตั้งค่าขนาดรูปภาพโลโก้ให้พอดีและไม่ล้นกรอบ */
+        .bluescope-logo-img {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+            display: inline-block;
+        }
+
+        .info-group {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #f7fafc;
+        }
+
+        .info-group:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            color: #718096;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .info-value {
+            color: #1a202c;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: right;
+        }
+
+        .highlight {
+            color: #00539b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-card">
+        <h2 class="product-title">
+            <!-- เปลี่ยนมาใช้การดึงไฟล์รูปภาพสำเร็จรูป (.png) โดยตรงผ่านคลังของ Wikimedia ทำให้ไม่เพี้ยนและตัวหนังสือครบแน่นอน -->
+            <img class="bluescope-logo-img" src="https://upload.wikimedia.org/wikipedia/commons/d/de/BlueScope_Logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original">
+            Product Details
+        </h2>
+        
+        <div class="info-group">
+            <span class="info-label">Coil Number</span>
+            <span class="info-value highlight">BST20261005</span>
+        </div>
+
+        <div class="info-group">
+            <span class="info-label">Direct Customer</span>
+            <span class="info-value">ABC Manufacturing Co., Ltd.</span>
+        </div>
+
+        <div class="info-group">
+            <span class="info-label">Weight</span>
+            <span class="info-value">2,450 kg</span>
+        </div>
+
+        <div class="info-group">
+            <span class="info-label">Length</span>
+            <span class="info-value">1,200 m</span>
+        </div>
+
+        <div class="info-group">
+            <span class="info-label">Production Time & Date</span>
+            <span class="info-value">05/10/2026 14:30 น.</span>
+        </div>
+
+        <div class="info-group">
+            <span class="info-label">Warranty No.</span>
+            <span class="info-value">10 Year</span>
+        </div>
+
+        <div class="info-group">
+            <span class="info-label">Project</span>
+            <span class="info-value">Automotive Parts Phase 2</span>
+        </div>
+
+        <div class="info-group">
+            <span class="info-label">Used Length</span>
+            <span class="info-value" style="color: #e53e3e;">450 m</span>
+        </div>
+    </div>
+
+</body>
+</html>
